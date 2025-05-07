@@ -40,7 +40,7 @@ function cargarMenu() {
       });
   }
   
-  // Función para mostrar ubicaciones (puedes expandir esto si usas más ubicaciones)
+  // Función para mostrar ubicaciones
   function cargarUbicaciones() {
     const contenedor = document.getElementById('ubicaciones');
     if (!contenedor) return;
