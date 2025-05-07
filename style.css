@@ -1,20 +1,91 @@
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  background-color: #1589c7;
-  padding: 20px;
-}
-nav ul li a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
+/* Estilo del body */
 body {
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Georgia', serif; /* Fuente elegante */
   padding: 20px;
   text-align: center;
-  background-color: rgb(159, 159, 159);
+  background-color: #f4f4f4; /* Color de fondo suave */
 }
+
+/* Navegación */
+nav ul {
+  list-style: none; /* Sin viñetas */
+  display: flex; /* Flexbox para disposición */
+  gap: 30px; /* Espacio entre elementos */
+  background-color: rgba(255, 99, 71, 0.9); /* Color de fondo tomate con opacidad */
+  padding: 20px;
+  border-radius: 10px; /* Bordes más redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+nav ul li {
+  transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+}
+
+nav ul li:hover {
+  transform: scale(1.1); /* Efecto de hover más pronunciado */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el mouse */
+}
+
+nav ul li a {
+  color: #fff; /* Color blanco para el texto */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Negrita para destacar */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones de color y transformaciones */
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo claro al pasar el mouse */
+  transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+/* Estilo del main */
 main {
-  margin-top: 20px;
+  margin-top: 20px; /* Margen superior */
+  padding: 30px; /* Espaciado interno */
+  background-color: #fff; /* Fondo blanco para contraste */
+  border-radius: 10px; /* Bordes más redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  font-size: 1.1em; /* Tamaño de fuente ligeramente más grande */
+}
+
+/* Estilo de párrafos */
+p {
+  margin-bottom: 15px; /* Espaciado entre párrafos */
+  line-height: 1.6; /* Mejora la legibilidad */
+  color: #333; /* Color de texto más oscuro para contraste */
+}
+
+/* Estilo de botones */
+button {
+  background-color: #ff6347; /* Color de fondo tomate */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s, transform 0.3s; /* Transición de color y transformaciones */
+  font-size: 1em; /* Tamaño de fuente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+button:hover {
+  background-color: #ff4500; /* Color más oscuro al pasar el mouse */
+  transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+/* Estilo de tarjetas (opcional para contenido) */
+.card {
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  padding: 20px; /* Espaciado interno */
+  margin: 15px 0; /* Margen entre tarjetas */
+}
+
+/* Estilo de encabezados */
+h1, h2, h3 {
+  color: #d9534f; /* Color rojo para encabezados */
+  margin-bottom: 10px; /* Espaciado inferior */
 }
